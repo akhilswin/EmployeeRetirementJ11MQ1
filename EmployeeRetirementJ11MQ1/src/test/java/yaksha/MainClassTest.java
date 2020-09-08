@@ -7,6 +7,19 @@ import java.util.*;
 import org.junit.jupiter.api.Test;
 
 class MainClassTest {
+	
+	@Test
+	public void testExceptionConditon() throws Exception {
+
+		TestUtils.yakshaAssert(TestUtils.currentTest(), true, TestUtils.boundaryTestFile);
+	}
+
+	@Test
+	public void testBoundaryCondition() throws Exception {
+
+		TestUtils.yakshaAssert(TestUtils.currentTest(), true, TestUtils.exceptionTestFile);
+	}
+	
 	@Test
 	void testRetirementEmployeeList() throws Exception {
 		LinkedHashMap<String, String> a1 = new LinkedHashMap<String, String>();
